@@ -27,4 +27,22 @@ function App() {
 }
 
 export default App;
+reportWebVitals();
+import React from "react";
+import ReactDOM from "react-dom";
+import MovieList from "./MovieList";
 
+ReactDOM.render(<MovieList />, document.getElementById("root"));
+
+import React from "react";
+import ReactDOM from "react-dom";
+import MovieList from "./MovieList";
+import Navbar from "./Navbar";
+
+ReactDOM.render(
+  <>
+    <Navbar />
+    <MovieList />
+  </>,
+  document.getElementById("root")
+);
