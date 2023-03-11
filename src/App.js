@@ -1,27 +1,69 @@
-import React, { useState } from 'react';
-import MovieList from './MovieList';
-import MovieForm from './MovieForm';
-import './app.css';
+import React, { useState } from "react";
+import "./App.css";
+import movies from "./data";
 
 function App() {
-  const [movies, setMovies] = useState([
-    { title: 'The Shawshank Redemption', poster: 'shawshank.jpg', description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.' },
-    { title: 'The Godfather', poster: 'godfather.jpg', description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.' },
-    { title: 'The Dark Knight', poster: 'darkknight.jpg', description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.' }
-  ]);
+  const [movieData, setMovieData] = useState(movies);
+  const [titleInput, setTitleInput] = useState("");
+  const [posterInput, setPosterInput] = useState("");
+  const [descriptionInput, setDescriptionInput] = useState("");
 
-  const addMovie = (title, poster, description) => {
-    const newMovie = { title: title, poster: poster, description: description };
-    setMovies([...movies, newMovie]);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newMovie = {
+      title: titleInput,
+      poster: posterInput,
+      description: descriptionInput,
+    };
+    setMovieData([...movieData, newMovie]);
+    setTitleInput("");
+    setPosterInput("");
+    setDescriptionInput("");
   };
 
   return (
     <div className="App">
-      <h1>My Movie List</h1>
-      <MovieList movies={movies} />
-      <MovieForm addMovie={addMovie} />
+      <h1>Movie List</h1>
+      <div className="movie-form">
+        <h2>Add a Movie</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            value={titleInput}
+            onChange={(event) => setTitleInput(event.target.value)}
+          />
+          <label htmlFor="poster">Poster URL:</label>
+          <input
+            type="text"
+            id="poster"
+            value={posterInput}
+            onChange={(event) => setPosterInput(event.target.value)}
+          />
+          <label htmlFor="description">Description:</label>
+          <textarea
+            id="description"
+            value={descriptionInput}
+            onChange={(event) => setDescriptionInput(event.target.value)}
+          />
+          <button type="submit">Add Movie</button>
+        </form>
+      </div>
+      <div className="movie-list">
+        {movieData.map((movie, index) => (
+          <div key={index} className="movie">
+            <img src={movie.poster} alt={movie.title} />
+            <div className="movie-info">
+              <h3>{movie.title}</h3>
+              <p>{movie.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default App;
+
