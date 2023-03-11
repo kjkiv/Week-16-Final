@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useState } from "react";
+import NavBar from "./components/NavBar";
+import MovieList from "./components/MovieList";
 
 function App() {
+  const [movies, setMovies] = useState([
+    { title: "The Shawshank Redemption", rating: 9.3 },
+    { title: "The Godfather", rating: 9.2 },
+    { title: "The Godfather: Part II", rating: 9.0 },
+    { title: "The Dark Knight", rating: 9.0 },
+  ]);
+
+  const addMovie = () => {
+    setMovies([
+      ...movies,
+      { title: "New Movie", rating: Math.floor(Math.random() * 10) + 1 },
+    ]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar onAddMovie={addMovie} />
+      <MovieList movies={movies} />
     </div>
   );
 }
 
 export default App;
+
