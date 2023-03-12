@@ -10,21 +10,21 @@ function App() {
       title: "The Shawshank Redemption",
       description:
         "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      imageUrl: "https://picsum.photos/id/1018/200/300",
+      imageUrl: "https://i.ytimg.com/vi/19THOH_dvxg/movieposter_en.jpg",
     },
     {
       id: 2,
       title: "The Godfather",
       description:
         "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      imageUrl: "https://picsum.photos/id/1015/200/300",
+      imageUrl: "https://e0.pxfuel.com/wallpapers/890/867/desktop-wallpaper-art-for-andre-ideas-the-godfather-poster-the-godfather-the-godfather-the-godfather-movie-poster-thumbnail.jpg",
     },
     {
       id: 3,
       title: "The Dark Knight",
       description:
         "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-      imageUrl: "https://picsum.photos/id/1021/200/300",
+      imageUrl: "https://pbs.twimg.com/media/FNuBxRYVQAI5Whc.png",
     },
   ]);
 
@@ -87,6 +87,10 @@ function App() {
   );
 }
 
+
 export default App;
+
+
+
 
 

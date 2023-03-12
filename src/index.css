@@ -32,7 +32,7 @@ body {
 
 
 .App {
-  background-color: #f7f7f7;
+  background-color: #0e80e9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -55,7 +55,7 @@ body {
 .SearchForm-button {
   font-size: 16px;
   background-color: #007bff;
-  color: #fff;
+  color: rgb(10, 108, 173);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -74,7 +74,7 @@ body {
   flex: 1 0 calc(33.33% - 20px);
   margin: 10px;
   padding: 10px;
-  background-color: #fff;
+  background-color: rgb(11, 136, 203);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -98,7 +98,7 @@ body {
   color: #888;
 }
 nav {
-  background-color: #333;
+  background-color: rgb(61, 167, 39);
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -120,7 +120,7 @@ nav li:last-child {
 }
 
 nav a {
-  color: #fff;
+  color: rgb(199, 14, 14);
   text-decoration: none;
   padding: 5px;
 }
