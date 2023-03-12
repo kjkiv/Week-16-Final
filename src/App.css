@@ -1,8 +1,8 @@
 .App {
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 100px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 h1 {
@@ -18,7 +18,7 @@ ul {
 
 li {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .movie-poster {
@@ -34,7 +34,7 @@ li {
 .movie-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 9px;
+  margin-bottom: 1px;
 }
 
 .movie-description {

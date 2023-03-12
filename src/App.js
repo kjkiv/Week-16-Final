@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 import Movie from "./Movie";
+import './index.css';
+
+
 
 function App() {
   const [movies, setMovies] = useState([
@@ -22,6 +25,7 @@ function App() {
     {
       id: 3,
       title: "The Dark Knight",
+      year: 2008,
       description:
         "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
       imageUrl: "https://pbs.twimg.com/media/FNuBxRYVQAI5Whc.png",
@@ -94,6 +98,8 @@ function App() {
     </div>
   );
 }
+
+
 
 
 export default App;

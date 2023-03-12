@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { movies } from "./data";
 import Movie from "./Movie";
 
+
+
 const MovieList = () => {
   const [movieList, setMovieList] = useState(movies);
 
