@@ -87,6 +87,23 @@ function App() {
   );
 }
 
+
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MovieList from "./MovieList";
+import MovieDetails from "./MovieDetails"; // import the new component
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={MovieList} />
+        <Route exact path="/movies/:id" component={MovieDetails} /> // add the new route
+      </Switch>
+    </Router>
+  );
+}
+
 export default App;
 
 
