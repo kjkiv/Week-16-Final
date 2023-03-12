@@ -33,7 +33,7 @@ body {
 
 .App {
   background-color: #0e80e9;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(224, 8, 8, 0.832);
   width: 100%;
@@ -66,7 +66,7 @@ body {
 .MovieList {
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
+  margin: 10px;
 }
 
 
@@ -95,7 +95,7 @@ body {
 .Movie-year {
   margin-top: 5px;
   font-size: 14px;
-  color: #888;
+  color: rgb(22, 189, 33);
 }
 nav {
   background-color: rgb(61, 167, 39);
@@ -128,3 +128,82 @@ nav a {
 nav a:hover {
   background-color: #555;
 }
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.movie-poster {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.movie-description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #007bff;
+  color: rgb(1, 13, 5);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
