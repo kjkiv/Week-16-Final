@@ -5,8 +5,8 @@ import Movie from "./Movie";
 
 function App() {
   const [movies, setMovies] = useState([
-    {
-      id: 1,
+    {   
+       id: 1,
       title: "The Shawshank Redemption",
       description:
         "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
@@ -26,6 +26,14 @@ function App() {
         "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
       imageUrl: "https://pbs.twimg.com/media/FNuBxRYVQAI5Whc.png",
     },
+    {   
+      id: 4,
+     title: "The Shawshank Redemption",
+     description:
+       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+     imageUrl: "https://i.ytimg.com/vi/19THOH_dvxg/movieposter_en.jpg",
+    }
+
   ]);
 
   const [title, setTitle] = useState("");
