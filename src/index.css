@@ -1,18 +1,5 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 * {
-  margin: 1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -32,10 +19,10 @@ body {
 
 
 .App {
-  background-color: #0e80e9;
-  padding: 10px;
+  background-color: #f7f7f7;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(224, 8, 8, 0.832);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 800px;
   overflow: hidden;
@@ -55,7 +42,7 @@ body {
 .SearchForm-button {
   font-size: 16px;
   background-color: #007bff;
-  color: rgb(10, 108, 173);
+  color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -66,15 +53,15 @@ body {
 .MovieList {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: -10px;
 }
 
 
 .Movie {
-  flex: 1 0 calc(23.33% - 20px);
+  flex: 1 0 calc(33.33% - 20px);
   margin: 10px;
   padding: 10px;
-  background-color: rgb(11, 136, 203);
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -95,115 +82,8 @@ body {
 .Movie-year {
   margin-top: 5px;
   font-size: 14px;
-  color: rgb(22, 189, 33);
-}
-nav {
-  background-color: rgb(61, 167, 39);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  color: #888;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
 
-nav li {
-  margin-right: 10px;
-}
-
-nav li:last-child {
-  margin-right: 0;
-}
-
-nav a {
-  color: rgb(199, 14, 14);
-  text-decoration: none;
-  padding: 5px;
-}
-
-nav a:hover {
-  background-color: #555;
-}
-
-.App {
-  font-family: Arial, sans-serif;
-  max-width: 100px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-h1 {
-  font-size: 36px;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.movie-poster {
-  width: 100px;
-  margin-right: 20px;
-}
-
-.movie-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.movie-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 1px;
-}
-
-.movie-description {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 1px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1px;
-}
-
-label {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-input[type="text"], textarea {
-  font-size: 16px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button[type="submit"] {
-  font-size: 18px;
-  padding: 10px;
-  background-color: #007bff;
-  color: rgb(1, 13, 5);
-  border-radius: 2px;
-  border: none;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0062cc;
-}
 
